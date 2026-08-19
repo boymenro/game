@@ -116,7 +116,7 @@
     </a>
   </div>
 
-  <details id="commandDetails" open="">
+  <details id="commandDetails">
     <summary>
       <strong class="btn btn-info btn-sm">📜 Danh sách lệnh hỗ trợ</strong>
     </summary>
@@ -202,25 +202,69 @@
               <div>
                 <a class="btn btn-warning mb-2" href="https://boymenro.github.io/game/DragonBoy1.jar">Tải ngay</a>
               </div>
-              <details open="">
-  <summary><strong class="btn btn-info btn-sm">📜 Lệnh hỗ trợ chi tiết</strong></summary>
+              <details id="commandDetails">
+    <summary>
+      <strong class="btn btn-info btn-sm">📜 Danh sách lệnh hỗ trợ</strong>
+    </summary>
 
-  <div class="container">
-    <ul>
+    <div class="command-box mt-3">
       <p class="red-text fw-bold mb-2">
         📢 Cách dùng chức năng: Button bên phải màn hình.
       </p>
-     
-    </ul>
-  </div>
+      <div class="command-list">
+        
+      </div>
+    </div>
 
-  <style>
-    .container {
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(
-</style></details>
+    <style>
+      summary { list-style: none; }
+      summary::marker { display: none; }
+
+      .red-text {
+        font-size: 18px;
+        color: #e53935;
+      }
+
+      .command-box {
+        background: #fff;
+        border-radius: 12px;
+        padding: 15px 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-top: 10px;
+      }
+
+      .command-list {
+        font-family: 'Courier New', monospace;
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .command {
+        font-weight: bold;
+        color: #2c3e50;
+        background: #e0f7fa;
+        padding: 2px 6px;
+        border-radius: 4px;
+        display: inline-block;
+        min-width: 100px;
+      }
+
+      .btn-info {
+        background-color: #17a2b8;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .btn-info:hover {
+        background-color: #138496;
+      }
+    </style>
+  </details>
             </div>
           </div>
         </div>
@@ -236,6 +280,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
 
 
 
